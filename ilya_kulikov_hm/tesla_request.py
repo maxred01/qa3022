@@ -75,6 +75,6 @@ headers = {
     'Range': 'bytes=0-'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload)
+response = requests.request("POST", URL, headers=headers, data=payload)
 
 print(response.text)
