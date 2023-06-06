@@ -1,0 +1,49 @@
+
+
+Сайт  - https://www.wildberries.by/
+
+css - Локаторы:
+
+1. Кнопка "Показать еще":
+
+[class='btn--show-more btn']
+
+2.Кнопка Логотипа:
+
+[title='Wildberries']
+
+3. Кнопка "меню-бургер":
+
+div button[class='header__hamburger']
+
+4.Кнопка "Корзина":
+
+a[href='/basket'][class='user-menu__btn']
+
+5.Кнопка 'продавайте на wb' в хеддере:
+
+div[class='header__ad-link'] a[href="https://seller.wildberries.ru"]
+
+-----------------------------------------------------------------------------------
+
+Xpath - Локаторы:
+
+1. Кнопка "меню-бургер":
+
+//button[@class='header__hamburger']
+
+2. Кнопка логотипа:
+
+//*[@title="Wildberries" and @class="header__logo"]
+
+3.Кнопка корзины в хеддере:
+
+//*[@href='/basket' and @class='user-menu__btn']
+
+4.Кнопка "показать еще":
+
+//*[@class='btn--show-more btn']
+
+5.Кнопка "Продавайте на Wildberries" в футере:
+
+//*[@class='footer-menu footer-menu--dropdown']//*[text()='Продавайте на Wildberries']
