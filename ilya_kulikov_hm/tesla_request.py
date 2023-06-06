@@ -1,6 +1,6 @@
 import requests
 
-url = "https://www.tesla.com/"
+URL = "https://www.tesla.com/"
 
 payload = {}
 headers = {
