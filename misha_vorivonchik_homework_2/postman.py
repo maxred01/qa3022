@@ -1,9 +1,9 @@
 import requests
 """библия"""
-URL = "https://www.travelnotesonline.com/wp-content/plugins/weglot/dist/front-js.js?ver=3.5"
+url = "https://www.travelnotesonline.com/wp-content/plugins/weglot/dist/front-js.js?ver=3.5"
 
-PAYLOAD={}
-HEADERS = {
+payload={}
+headers = {
   'sec-ch-ua': '"Google Chrome";v="113", "Chromium";v="113", "Not-A.Brand";v="24"',
   'Referer': 'https://www.travelnotesonline.com/',
   'sec-ch-ua-mobile': '?0',
@@ -12,6 +12,6 @@ HEADERS = {
   'sec-ch-ua-platform': '"Windows"'
 }
 
-response = requests.request("GET", URL, headers=HEADERS, data=PAYLOAD)
+response = requests.request("GET", url, headers=headers, data=payload)
 
 print(response.text)
