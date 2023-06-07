@@ -1,24 +1,28 @@
 Hoster.by/main page
 
-XPath locators:
-
-//*[@id="11101"]//*[text()='Подробнее']
-
-//*[@id="multidomen"]//*[contains(text(),'Регистрация доменов')]
-
-//*[@id="multidomen"]//label[@for='com']
-
-//*[@id="multidomen"]//*[@class='btnText blueBtn small showAllZones' and contains(text(),'Все домены')]
-
-//*[@id="auth_form"]//input[@type='input' or @name='email']
-
 CSS locators:
 
-a[class="hby-header-left-item"]
+a[title="Model S"] span[class="tds-site-nav-item-text"]
 
-div[class="login-icon right-icon open-auth"]
+svg[class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"]
 
-button[class="btnFill full redBtn"]
+div[class="tds--hideon-phone-only"] a[href="/support/incentives"]
 
-a[href="tel:+375296045702"]
+button[type="button"] span[class="tds-site-nav-item-text"]
+
+#top-of-page
+
+XPath locators:
+
+//*[@id="tds-site-header"]
+
+//*[@id="tds-site-header"]//*[contains(text(),'Solar Panels')]
+
+//*[@id="tesla-hero-parallax-2349"]
+
+//*[@id="tesla-hero-parallax-2300"]
+
+//*[@id="tesla-hero-parallax-39"]
+
+
 
