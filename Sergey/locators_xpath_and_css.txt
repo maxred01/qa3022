@@ -5,7 +5,6 @@ XPAth:
 //*[@id="tesla-hero-parallax-2349"] //span[text()="Demo Drive"]  #их два, но как я понял - это одна и таже кнопка
 //*[@id="tesla-hero-parallax-2293"] //a[@href="/inventory/new/my"] #тоже самое
 //*[@id="page-new-homepage"] //a[contains(text(),'Tesla © 2023')]
-
 CSS:
 div[class="tds--hideon-phone-only"] a[data-gtm-label="homepage-banner"]
 a[href="/solarroof/design"]

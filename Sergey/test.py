@@ -1,7 +1,6 @@
 import requests
 URL = "https://www.tesla.com/api/tesla/header/v1_1"
 PAYLOAD = {}
-
 HEADERS = {
   'authority': 'cars.av.by',
   'accept': 'text/html,application/xhtml+xml,application/xml;'
