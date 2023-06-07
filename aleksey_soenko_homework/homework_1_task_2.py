@@ -1,9 +1,9 @@
 import requests
 
-url = "https://www.tesla.com/api/tesla/header/v1_1"
+URL = "https://www.tesla.com/api/tesla/header/v1_1"
 
-payload = {}
-headers = {
+PAYLOAD = {}
+HEADERS = {
   'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
   'Referer': 'https://www.tesla.com/',
   'sec-ch-ua-mobile': '?0',
@@ -18,6 +18,6 @@ headers = {
             'dAPEMQHvcqfbdwVlUw7GBrAdUKePXgpVC6YXtt6DJgdreeVc'
 }
 
-response = requests.request("GET", url, headers=headers, data=payload)
+response = requests.request("GET", URL, headers=HEADERS, data=PAYLOAD)
 
 print(response.text)
