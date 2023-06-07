@@ -1,0 +1,28 @@
+Hoster.by/main page
+
+CSS locators:
+
+a[title="Model S"] span[class="tds-site-nav-item-text"]
+
+svg[class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"]
+
+div[class="tds--hideon-phone-only"] a[href="/support/incentives"]
+
+button[type="button"] span[class="tds-site-nav-item-text"]
+
+#top-of-page
+
+XPath locators:
+
+//*[@id="tds-site-header"]
+
+//*[@id="tds-site-header"]//*[contains(text(),'Solar Panels')]
+
+//*[@id="tesla-hero-parallax-2349"]
+
+//*[@id="tesla-hero-parallax-2300"]
+
+//*[@id="tesla-hero-parallax-39"]
+
+
+
