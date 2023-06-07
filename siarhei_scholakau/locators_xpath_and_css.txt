@@ -1,5 +1,4 @@
 https://www.tesla.com/
-
 XPAth:
 //button[span='Menu']
 //a[span='Model Y']
