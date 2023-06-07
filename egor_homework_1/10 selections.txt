@@ -1,0 +1,33 @@
+5 xPath
+
+1. The "Shop" button
+//*[text()='Shop'] - Поиск элемента по текстовому содержимому
+
+2. TOP header (text: $7,500 tax credit available for all new Model 3 and Model Y vehicles. Learn More)
+//div[@class='tds--hideon-phone-only'] - Поиск элемента по тегу и классу
+
+3. The "News" button 
+//*[text()='News'] Поиск элемента по текстовому содержимому
+
+4. The "Shop Now" очень большой вопрос по этой кнопке 
+//*[@href="/shop?tesref=true"]
+
+5. The "Menu" button
+//button[@title='Menu']
+
+5 css
+
+1. The "Menu" button
+[title='Menu'] 
+
+2. The "Model Y" button
+[href="/modely"]
+
+3. The "Model X" button
+[href="/modelx"]
+
+4. The "Model 3" button
+[href="/model3"]
+
+5. The "Model S" button
+[href="/models"]
