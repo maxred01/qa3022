@@ -1,0 +1,24 @@
+Hoster.by/main page
+
+XPath locators:
+
+//*[@id="11101"]//*[text()='Подробнее']
+
+//*[@id="multidomen"]//*[contains(text(),'Регистрация доменов')]
+
+//*[@id="multidomen"]//label[@for='com']
+
+//*[@id="multidomen"]//*[@class='btnText blueBtn small showAllZones' and contains(text(),'Все домены')]
+
+//*[@id="auth_form"]//input[@type='input' or @name='email']
+
+CSS locators:
+
+a[class="hby-header-left-item"]
+
+div[class="login-icon right-icon open-auth"]
+
+button[class="btnFill full redBtn"]
+
+a[href="tel:+375296045702"]
+
