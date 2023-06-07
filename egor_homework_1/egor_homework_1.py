@@ -1,10 +1,10 @@
 
 import requests
 
-url = "https://www.tesla.com/"
+URL = "https://www.tesla.com/"
 
-payload = {}
-headers = {
+PAYLOAD = {}
+HEADERS = {
   'authority': 'www.tesla.com',
   'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,'
             'application/signed-exchange;v=b3;q=0.7',
@@ -58,6 +58,6 @@ headers = {
   'content-type': 'text/plain'
 }
 
-response = requests.request("POST", url, headers=headers, data=payload)
+RESPONSE = requests.request("POST", URL, headers=HEADERS, data=PAYLOAD)
 
-print(response.text)
+print(RESPONSE.text)
