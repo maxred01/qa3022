@@ -1,49 +1,49 @@
 
 
-Сайт  - https://www.wildberries.by/
+Сайт  - https://www.tesla.com/
 
 css - Локаторы:
 
-1. Кнопка "Показать еще":
+1. Кнопка "Learn more":
 
-[class='btn--show-more btn']
+div>a[href="/support/incentives"]
 
 2.Кнопка Логотипа:
 
-[title='Wildberries']
+[aria-label*="Tesla Logo"]
 
-3. Кнопка "меню-бургер":
+3. Кнопка "Model Y":
 
-div button[class='header__hamburger']
+[title='Model Y']
 
-4.Кнопка "Корзина":
+4.Кнопка "Shop":
 
-a[href='/basket'][class='user-menu__btn']
+[href='https://shop.tesla.com']
 
-5.Кнопка 'продавайте на wb' в хеддере:
+5.Кнопка 'Shop Now':
 
-div[class='header__ad-link'] a[href="https://seller.wildberries.ru"]
+div[class="tcl-homepage-hero__buttons tcl-homepage-hero__buttons-on-desktop tcl-homepage-hero__buttons--single"]>section>a[title="Shop Now"]
 
 -----------------------------------------------------------------------------------
 
 Xpath - Локаторы:
 
-1. Кнопка "меню-бургер":
+1. Кнопка "Model 3":
 
-//button[@class='header__hamburger']
+//*[@href="/model3"]
 
 2. Кнопка логотипа:
 
-//*[@title="Wildberries" and @class="header__logo"]
+//*[@class="tds-site-logo-link"]
 
-3.Кнопка корзины в хеддере:
+3.Кнопка "Shop" в хеддере:
 
-//*[@href='/basket' and @class='user-menu__btn']
+//*[@title="Shop"]
 
-4.Кнопка "показать еще":
+4.Кнопка "Account":
 
-//*[@class='btn--show-more btn']
+//*[@title="Account"]
 
-5.Кнопка "Продавайте на Wildberries" в футере:
+5.Кнопка "Shop now" внизу страницы:
 
-//*[@class='footer-menu footer-menu--dropdown']//*[text()='Продавайте на Wildberries']
+//div[@class="tcl-homepage-hero__buttons tcl-homepage-hero__buttons-on-desktop tcl-homepage-hero__buttons--single"]//*[@title="Shop Now"]
