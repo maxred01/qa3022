@@ -1,9 +1,9 @@
 import requests
 
-url = "https://www.tesla.com/api/tesla/header/v1_1"
+URL = "https://www.tesla.com/api/tesla/header/v1_1"
 
-payload = {}
-headers = {
+PAYLOAD = {}
+HEADERS = {
   'authority': 'cars.av.by',
   'accept': 'text/html,application/xhtml+xml,application/xml;'
             'q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;'
@@ -35,6 +35,6 @@ headers = {
                 'Chrome/113.0.0.0 Safari/537.36'
 }
 
-response = requests.request("GET", url, headers=headers, data=payload)
+response = requests.request("GET", URL, headers=HEADERS, data=PAYLOAD)
 
 print(response.text)
