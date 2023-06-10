@@ -1,0 +1,22 @@
+X-path locators
+
+https://demoqa.com/
+1. //img[@src='/images/Toolsqa.jpg']
+2. (//div[@class='avatar mx-auto white'])[1]
+
+https://demoqa.com/books
+3. //div[normalize-space()='Elements']
+4. //button[@id='login']
+5. //a[contains(@href,'/books?book=9781449325862')]
+
+CSS locators
+
+https://demoqa.com/
+1. img[src='/images/Toolsqa.jpg']
+2. div[class='category-cards'] div:nth-child(1) div:nth-child(1) div:nth-child(2)
+
+https://demoqa.com/books
+3. div[bis_skin_checked='1'][style=''][xpath='1']
+4. #login
+5. a[href='/books?book=9781449325862']
+
