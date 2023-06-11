@@ -1,0 +1,47 @@
+
+Страница  - https://demoqa.com/
+
+Xpath - Локаторы:
+
+1. Карточка Elements:
+
+//*[@class="card mt-4 top-card"][position()=1]
+
+2. Лого в хедере:
+
+//header/a[@href="https://demoqa.com"]
+
+3. Баннер домашний:
+
+//*[@class="home-banner"]
+
+4.Карточка Widgets:
+
+//*[@class="card mt-4 top-card"][position()=4]
+
+5. Карточка Book Store Application:
+
+//*[@class="card mt-4 top-card"][position()=6]
+
+
+Css selectors:
+
+1. Логотип
+
+[href="https://demoqa.com"]
+
+2. Home banner:
+
+div.home-banner
+
+3. Карточка Elemtnts:
+
+div[class*='card mt-4 top-card']:nth-of-type(1)
+
+4.Карточка Wigets:
+
+div[class*='card mt-4 top-card']:nth-of-type(4)
+
+5. Карточка Book Store Application:
+
+div[class*='card mt-4 top-card']:nth-of-type(6)
