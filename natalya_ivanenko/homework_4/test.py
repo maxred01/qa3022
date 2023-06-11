@@ -1,8 +1,6 @@
 import time
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 chrome_driver = webdriver.Chrome()
 chrome_driver.get("https://demoqa.com")
 chrome_driver.maximize_window()
@@ -51,4 +49,3 @@ chrome_driver.execute_script("window.scrollBy(0, 500);")
 button = chrome_driver.find_element(By.CSS_SELECTOR, '.left-pannel .element-group:nth-child(6)')
 button.is_displayed()
 button.click()
-
