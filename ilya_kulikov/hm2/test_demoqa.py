@@ -11,7 +11,7 @@ chrome_driver.maximize_window()
 btn_elements = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
                                                     '[position()=1]')
 res_elements = btn_elements.is_displayed()
-assert res_elements == True
+pytest_check.is_true(res_elements)
 btn_elements.click()
 # time.sleep(4)
 chrome_driver.back()
@@ -19,7 +19,7 @@ chrome_driver.back()
 # Проверка 2-ой карточки
 btn_forms = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"][position()=2]')
 res_forms = btn_forms.is_displayed()
-assert res_forms == True
+pytest_check.is_true(res_forms)
 btn_forms.click()
 # time.sleep(4)
 chrome_driver.back()
@@ -35,7 +35,7 @@ chrome_driver.back()
 # Проверка 4-ой карточки
 btn_widgets = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"][position()=4]')
 res_widgets = btn_widgets.is_displayed()
-assert res_widgets == True
+pytest_check.is_true(res_widgets)
 btn_widgets.click()
 # time.sleep(2)
 chrome_driver.back()
@@ -44,7 +44,7 @@ chrome_driver.back()
 btn_interactions = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
                                                         '[position()=5]')
 res_interactions = btn_interactions.is_displayed()
-assert res_interactions == True
+pytest_check.is_true(res_interactions)
 btn_interactions.click()
 # time.sleep(3)
 chrome_driver.back()
@@ -53,7 +53,7 @@ chrome_driver.back()
 btn_book_store = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
                                                       '[position()=6]')
 res_book_store = btn_book_store.is_displayed()
-assert res_book_store == True
+pytest_check.is_true(res_book_store)
 btn_book_store.click()
 
 # time.sleep(5)
