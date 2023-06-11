@@ -8,7 +8,8 @@ chrome_driver.get('https://demoqa.com/')
 chrome_driver.maximize_window()
 
 # Проверка 1-ой карточки
-btn_elements = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"][position()=1]')
+btn_elements = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
+                                                    '[position()=1]')
 res_elements = btn_elements.is_displayed()
 assert res_elements == True
 btn_elements.click()
@@ -40,7 +41,8 @@ btn_widgets.click()
 chrome_driver.back()
 
 # Проверка 5-ой карточки
-btn_interactions = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"][position()=5]')
+btn_interactions = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
+                                                        '[position()=5]')
 res_interactions = btn_interactions.is_displayed()
 assert res_interactions == True
 btn_interactions.click()
@@ -48,7 +50,8 @@ btn_interactions.click()
 chrome_driver.back()
 
 # Проверка 6-ой карточки
-btn_book_store = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"][position()=6]')
+btn_book_store = chrome_driver.find_element(By.XPATH, '//*[@class="card mt-4 top-card"]'
+                                                      '[position()=6]')
 res_book_store = btn_book_store.is_displayed()
 assert res_book_store == True
 btn_book_store.click()
