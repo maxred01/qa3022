@@ -1,0 +1,12 @@
+xPath
+//*[@src="/images/Toolsqa.jpg"]
+//*[@href="https://www.toolsqa.com/selenium-training/"]
+//*[text()='Elements']
+//div[@class="card mt-4 top-card"][3]
+//div[@class="card mt-4 top-card"][4]
+CCS
+[href="https://www.toolsqa.com/selenium-training/"]
+[href="https://demoqa.com"]
+[href="/favicon.png"]
+img[src='/images/Toolsqa.jpg']
+a[href='/books?book=9781449325862']
