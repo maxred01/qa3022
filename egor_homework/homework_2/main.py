@@ -1,15 +1,12 @@
-import selenium
 import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import Select
 from selenium import webdriver
 import pytest_check as check
 
 chrome_driver = webdriver.Chrome()
-main_url = "https://demoqa.com"
+MAIN_URL = "https://demoqa.com"
 chrome_driver.maximize_window()
-chrome_driver.get(main_url)
+chrome_driver.get(MAIN_URL)
 
 # perform check the Element button
 button_element = chrome_driver.find_element(By.XPATH, "//div[@class='card mt-4 top-card'][1]")
