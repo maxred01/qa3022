@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pytest_check as check
 
-
 chrome_driver = webdriver.Chrome()
 chrome_driver.get('https://demoqa.com/')
 chrome_driver.maximize_window()
@@ -37,24 +36,24 @@ check.is_true(res_sub)
 btn_submit.click()
 time.sleep(5)
 
-
 # находим элемент с выводом данных
 output_element = chrome_driver.find_element(By.XPATH, "//div[@class='border col-md-12 col-sm-12']")
 
 # проверяем, что введенные данные соответствуют ожидаемому результату
 
-expected_output = "Name:Jvan Pinchuk\nEmail:j.v.a.n.pinchuk@gmail.com\nCurrent Address :c. Minsk, st. K.Marks, 22-11\nPermananet Address :c. Minsk, st. K.Marks, 22-11"
-assert output_element.text == expected_output, 'Not the same text'
-if output_element.text == expected_output:
+EXPECTED_OUTPUT = "Name:Jvan Pinchuk\nEmail:j.v.a.n.pinchuk@gmail.com\n" \
+                  "Current Address :c. Minsk, st. K.Marks, 22-11\n" \
+                  "Permananet Address :c. Minsk, st. K.Marks, 22-11"
+assert output_element.text == EXPECTED_OUTPUT, 'Not the same text'
+if output_element.text == EXPECTED_OUTPUT:
     print("the same text")
-
 
 btn_check = chrome_driver.find_element(By.XPATH, "(//li[@id='item-1'])[1]")
 btn_check.click()
 
-dropdown_list_home = chrome_driver.find_element(By.XPATH, "//button[@title='Toggle']//*[name()='svg']")
+dropdown_list_home = chrome_driver.find_element\
+    (By.XPATH, "//button[@title='Toggle']//*[name()='svg']")
 dropdown_list_home.click()
-
 
 dropdown_list_desk = chrome_driver.find_element(By.XPATH, "(//button[@title='Toggle'])[2]")
 dropdown_list_desk.click()
@@ -66,12 +65,12 @@ dropdown_list_down.click()
 # находим все чекбоксы на странице
 checkboxes = chrome_driver.find_elements(By.XPATH, "//input[@type='checkbox']")
 # проверяем каждый чекбокс
-num = 1
+NUM = 1
 for checkbox in checkboxes:
-    chrome_driver.find_element(By.XPATH, f"(// span[@class ='rct-checkbox'])[{num}]").click()
+    chrome_driver.find_element(By.XPATH, f"(// span[@class ='rct-checkbox'])[{NUM}]").click()
     print("is-selected : ", checkbox.is_selected())
     print()
-    num += 1
+    NUM += 1
 
 time.sleep(5)
 # Close the driver
