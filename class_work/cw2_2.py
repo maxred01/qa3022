@@ -1,5 +1,5 @@
-from selenium import webdriver
 import time
+from selenium import webdriver
 
 # создаем экземпляр драйвера для Chrome
 driver = webdriver.Chrome()
