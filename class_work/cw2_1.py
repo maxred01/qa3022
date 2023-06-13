@@ -43,7 +43,8 @@ time.sleep(2)
 output_element = driver.find_element(By.XPATH, "//div[@class='border col-md-12 col-sm-12']/p")
 
 # проверяем, что введенные данные соответствуют ожидаемому результату
-EXPECTED_OUTPUT = "Name:John Doe\nEmail:johndoe@example.com\nCurrent Address :123 Main St, Anytown, USA\nPermanent Address :98765"
+EXPECTED_OUTPUT = "Name:John Doe\nEmail:johndoe@example.com\n" \
+                  "Current Address :123 Main St, Anytown, USA\nPermanent Address :98765"
 assert output_element.text == EXPECTED_OUTPUT
 
 driver.quit()
