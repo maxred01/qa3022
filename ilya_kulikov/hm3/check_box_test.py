@@ -1,6 +1,7 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
+
 
 chrome_driver = webdriver.Chrome()
 chrome_driver.get('https://demoqa.com/')

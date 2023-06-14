@@ -1,7 +1,8 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pytest_check
-import time
+
 
 chrome_driver = webdriver.Chrome()
 chrome_driver.get('https://demoqa.com/')
