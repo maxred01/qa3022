@@ -46,7 +46,7 @@ EXPECTED_OUTPUT = "Name:Jvan Pinchuk\nEmail:j.v.a.n.pinchuk@gmail.com\n" \
                   "Permananet Address :c. Minsk, st. K.Marks, 22-11"
 assert output_element.text == EXPECTED_OUTPUT, 'Not the same text'
 if output_element.text == EXPECTED_OUTPUT:
-    print("the same text")
+    print("It's the same text. \n")
 
 btn_check = chrome_driver.find_element(By.XPATH, "(//li[@id='item-1'])[1]")
 btn_check.click()
@@ -64,13 +64,12 @@ dropdown_list_down.click()
 
 # находим все чекбоксы на странице
 checkboxes = chrome_driver.find_elements(By.XPATH, "//input[@type='checkbox']")
+
 # проверяем каждый чекбокс
-NUM = 1
-for checkbox in checkboxes:
-    chrome_driver.find_element(By.XPATH, f"(// span[@class ='rct-checkbox'])[{NUM}]").click()
+for index, checkbox in enumerate(checkboxes):
+    chrome_driver.find_element(By.XPATH, f"(// span[@class ='rct-checkbox'])[{index+1}]").click()
     print("is-selected : ", checkbox.is_selected())
     print()
-    NUM += 1
 
 time.sleep(5)
 # Close the driver
