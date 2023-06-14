@@ -11,42 +11,42 @@ btn_elements = chrome_driver.find_element(By.XPATH, "(//div[@class='card mt-4 to
 res_elements = btn_elements.is_displayed()
 check.is_true(res_elements)
 btn_elements.click()
-#
-# btn_text_box = chrome_driver.find_element(By.XPATH, "(//li[@id='item-0'])[1]")
-# res_elements = btn_text_box.is_displayed()
-# check.is_true(res_elements)
-# btn_text_box.click()
-# time.sleep(5)
-#
-# field_name = chrome_driver.find_element(By.CSS_SELECTOR, "#userName")
-# field_name.send_keys("Jvan Pinchuk")
-#
-# field_email = chrome_driver.find_element(By.CSS_SELECTOR, "#userEmail")
-# field_email.send_keys("j.v.a.n.pinchuk@gmail.com")
-#
-# field_adress = chrome_driver.find_element(By.CSS_SELECTOR, "#currentAddress")
-# field_adress.send_keys("c. Minsk, st. K.Marks, 22-11")
-#
-# field_per_adress = chrome_driver.find_element(By.CSS_SELECTOR, "#permanentAddress")
-# field_per_adress.send_keys("c. Minsk, st. K.Marks, 22-11")
-#
-# btn_submit = chrome_driver.find_element(By.CSS_SELECTOR, "#submit")
-# res_sub = btn_submit.is_displayed()
-# check.is_true(res_sub)
-# btn_submit.click()
-# time.sleep(5)
-#
-# # находим элемент с выводом данных
-# output_element = chrome_driver.find_element(By.XPATH, "//div[@class='border col-md-12 col-sm-12']")
-#
-# # проверяем, что введенные данные соответствуют ожидаемому результату
-#
-# EXPECTED_OUTPUT = "Name:Jvan Pinchuk\nEmail:j.v.a.n.pinchuk@gmail.com\n" \
-#                   "Current Address :c. Minsk, st. K.Marks, 22-11\n" \
-#                   "Permananet Address :c. Minsk, st. K.Marks, 22-11"
-# assert output_element.text == EXPECTED_OUTPUT, 'Not the same text'
-# if output_element.text == EXPECTED_OUTPUT:
-#     print("It's the same text. \n")
+
+btn_text_box = chrome_driver.find_element(By.XPATH, "(//li[@id='item-0'])[1]")
+res_elements = btn_text_box.is_displayed()
+check.is_true(res_elements)
+btn_text_box.click()
+time.sleep(5)
+
+field_name = chrome_driver.find_element(By.CSS_SELECTOR, "#userName")
+field_name.send_keys("Jvan Pinchuk")
+
+field_email = chrome_driver.find_element(By.CSS_SELECTOR, "#userEmail")
+field_email.send_keys("j.v.a.n.pinchuk@gmail.com")
+
+field_adress = chrome_driver.find_element(By.CSS_SELECTOR, "#currentAddress")
+field_adress.send_keys("c. Minsk, st. K.Marks, 22-11")
+
+field_per_adress = chrome_driver.find_element(By.CSS_SELECTOR, "#permanentAddress")
+field_per_adress.send_keys("c. Minsk, st. K.Marks, 22-11")
+
+btn_submit = chrome_driver.find_element(By.CSS_SELECTOR, "#submit")
+res_sub = btn_submit.is_displayed()
+check.is_true(res_sub)
+btn_submit.click()
+time.sleep(5)
+
+# находим элемент с выводом данных
+output_element = chrome_driver.find_element(By.XPATH, "//div[@class='border col-md-12 col-sm-12']")
+
+# проверяем, что введенные данные соответствуют ожидаемому результату
+
+EXPECTED_OUTPUT = "Name:Jvan Pinchuk\nEmail:j.v.a.n.pinchuk@gmail.com\n" \
+                  "Current Address :c. Minsk, st. K.Marks, 22-11\n" \
+                  "Permananet Address :c. Minsk, st. K.Marks, 22-11"
+assert output_element.text == EXPECTED_OUTPUT, 'Not the same text'
+if output_element.text == EXPECTED_OUTPUT:
+    print("It's the same text. \n")
 
 btn_check = chrome_driver.find_element(By.XPATH, "(//li[@id='item-1'])[1]")
 btn_check.click()
