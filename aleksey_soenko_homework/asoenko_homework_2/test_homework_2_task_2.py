@@ -1,31 +1,31 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
 import pytest_check as check
 
-URL = "https://demoqa.com/"                        # Кладём линк в переменную URL
+URL = "https://demoqa.com/"
 
-chrome_driver = webdriver.Chrome()                 # Инициализируем webdriver
+chrome_driver = webdriver.Chrome()
 
 chrome_driver.get(URL)
 
 chrome_driver.maximize_window()
 # Чек элемента elements
-btn_elements = chrome_driver.find_element(By.XPATH, '//*[text()="Elements"]')
+btn_elmnts = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[1]')
 
-display_elements = btn_elements.is_displayed()
+display_elmnts = btn_elmnts.is_displayed()
 
-check.is_true(display_elements)
+check.is_true(display_elmnts)
 
-btn_elements.click()
+btn_elmnts.click()
 
 time.sleep(5)
 
 chrome_driver.back()
 #Чек элемента forms
-btn_forms = chrome_driver.find_element(By.XPATH, '//*[text()="Forms"]')
+btn_forms = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[2]')
 
-display_forms = btn_elements.is_displayed()
+display_forms = btn_forms.is_displayed()
 
 check.is_true(display_forms)
 
@@ -35,7 +35,7 @@ time.sleep(5)
 
 chrome_driver.back()
 #Чек элемента alerts, frame and windows
-btn_afw = chrome_driver.find_element(By.CSS_SELECTOR, 'div:nth-child(3) div:nth-child(1) div:nth-child(1)')
+btn_afw = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[3]')
 
 display_afw = btn_afw.is_displayed()
 
@@ -47,7 +47,7 @@ time.sleep(5)
 
 chrome_driver.back()
 # Чек элемента widgets
-btn_widgets = chrome_driver.find_element(By.XPATH, '//*[text()="Widgets"]')
+btn_widgets = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[4]')
 
 display_widgets = btn_widgets.is_displayed()
 
@@ -59,7 +59,7 @@ time.sleep(5)
 
 chrome_driver.back()
 #Чек элемента interactions
-btn_interactions = chrome_driver.find_element(By.ID, '//*[text()="Interactions"]')
+btn_interactions = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[5]')
 
 display_interactions = btn_interactions.is_displayed()
 
@@ -71,7 +71,7 @@ time.sleep(5)
 
 chrome_driver.back()
 #Чек элемента book store application
-btn_book = chrome_driver.find_element(By.ID, '//*[text()="Book Store Application"]')
+btn_book = chrome_driver.find_element(By.XPATH, '(//div[@class="card mt-4 top-card"])[6]')
 
 display_book = btn_book.is_displayed()
 
@@ -82,4 +82,3 @@ btn_book.click()
 time.sleep(5)
 
 chrome_driver.quit()
-
