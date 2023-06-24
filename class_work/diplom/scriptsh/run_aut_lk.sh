@@ -1,2 +1,2 @@
 #!/bin/bash
-pytest -v -s /home/testing/test_login_lk.py --alluredir=/home/testing/hoster/test/reports
+pytest -v -s /class_work/diplom/tests --alluredir=/class_work/diplom/tests/reports

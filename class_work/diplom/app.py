@@ -43,8 +43,9 @@ def run():
                           stdin=subprocess.PIPE,
                           universal_newlines=True) as result:
         out = result.communicate()
-    return render_template('run.html', text=out, json=out)
+    return render_template('welcome.html', text=out, json=out)
 
 
 if __name__ == "__main__":
     app.run(debug=True)
+
