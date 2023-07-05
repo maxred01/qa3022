@@ -17,9 +17,9 @@ driver.get("https://www.tesla.com/drive")
 # Ожидание загрузки страницы
 wait = WebDriverWait(driver, 10)
 
-wait.until(EC.presence_of_element_located((By.CLASS_NAME, "models")))
+wait.until(demo_locators.models)
 
-models = driver.find_elements(By.CLASS_NAME, 'models')
+models = driver.find_elements(demo_locators.models)
 for item in models:
     ActionChains(driver).move_to_element(item).perform()
     assert(item.is_displayed())
@@ -31,43 +31,43 @@ assert(models[0])
 driver.execute_script("window.scrollBy(0, 500);")
 time.sleep(1)
 
-input = driver.find_element(By.ID, "edit-firstname-td")
+input = driver.find_element(demo_locators.edit_firstname)
 input.send_keys("Natalja")
 
-input = driver.find_element(By.ID, "edit-lastname-td")
+input = driver.find_element(demo_locators.edit_lastname)
 input.send_keys("Ivanenko")
 
-input = driver.find_element(By.ID, "edit-phonenumber-td")
+input = driver.find_element(demo_locators.edit_phonenumber)
 input.send_keys("2015550123")
 
-input = driver.find_element(By.ID, "edit-usermail-td")
+input = driver.find_element(demo_locators.edit_usermail)
 input.send_keys("hello@mail.ru")
 
-input = driver.find_element(By.ID, "edit-zipcode-td")
+input = driver.find_element(demo_locators.edit_zipcode)
 input.send_keys("78585")
 
 driver.execute_script("window.scrollBy(0, 500);")
 
 time.sleep(1)
 
-terms = driver.find_element(By.CLASS_NAME, "tds-form-input-choice-label")
+terms = driver.find_element(demo_locators.label)
 #ActionChains(driver).move_to_element(terms).perform()
 terms.click()
 
-errors = driver.find_elements(By.CLASS_NAME, "tds-form-feedback-text")
+errors = driver.find_elements(demo_locators.text)
 for error in errors:
     assert(not error.is_displayed())
 
-submit = driver.find_element(By.ID, "edit-submit-td-ajax0")
+submit = driver.find_element(demo_locators.ajax0)
 assert(submit.is_displayed())
 assert(submit.is_enabled())
 submit.click()
 
 
 wait = WebDriverWait(driver, 10)
-wait.until(EC.presence_of_element_located((By.ID, "edit-submit-td-ajax-3")))
+wait.until(EC.presence_of_element_located(demo_locators.ajax_3)
 
-submit = driver.find_element(By.ID, "edit-submit-td-ajax-3")
+submit = driver.find_element(demo_locators.ajax_3)
 assert(submit.is_displayed())
 assert(submit.is_enabled())
 submit.click()
