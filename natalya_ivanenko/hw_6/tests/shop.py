@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from natalya_ivanenko.hw_6.tests.locators import shop_locators
 
 # Инициализация драйвера Chrome
 driver = webdriver.Chrome()
@@ -17,15 +18,15 @@ driver.get("https://shop.tesla.com/")
 wait = WebDriverWait(driver, 10)
 time.sleep(2)
 
-button = driver.find_element(By.CSS_SELECTOR, ".tds-site-nav-item[data-open-block='tile-1']")
+button = driver.find_element(shop_locators.header)
 button.click()
 
 time.sleep(2)
-product = driver.find_element(By.CSS_SELECTOR, "*[data-productsku='1669541-00-A']")
+product = driver.find_element(shop_locators.product)
 product.click()
 
 time.sleep(2)
-button = driver.find_element(By.CLASS_NAME, "btn-purchasable")
+button = driver.find_element(shop_locators.btn_purchasable)
 button.click()
 
 time.sleep(2)
@@ -33,7 +34,7 @@ time.sleep(2)
 driver.get("https://shop.tesla.com/cart")
 
 
-button = driver.find_element(By.CLASS_NAME, "checkout")
+button = driver.find_element(shop_locators.checkout)
 assert(button.is_displayed())
 assert(button.is_enabled())
 button.click()

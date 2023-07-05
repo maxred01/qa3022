@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
+from natalya_ivanenko.hw_6.tests.locators import auth_locators
 
 # Инициализация драйвера Chrome
 driver = webdriver.Chrome()
@@ -12,6 +13,8 @@ driver = webdriver.Chrome()
 driver.maximize_window()
 # Открытие страницы
 driver.get("https://www.tesla.com/teslaaccount")
+
+shop_locators.header_logo
 
 email = 'aosuvy@mailto.plus'
 password = 'helloworld1'
