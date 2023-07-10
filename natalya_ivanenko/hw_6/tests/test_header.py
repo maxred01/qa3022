@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-# from natalya_ivanenko.hw_6.tests.locators import header_locators
+ from natalya_ivanenko.hw_6.pages.locators import header_locators
 
 def test_header(driver):
     wait.until(EC.presence_of_element_located(header_locators.header))

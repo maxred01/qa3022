@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains
-from natalya_ivanenko.hw_6.tests.locators import demo_locators
+from natalya_ivanenko.hw_6.pages.locators import demo_locators
 
 # Инициализация драйвера Chrome
 driver = webdriver.Chrome()
@@ -65,7 +65,7 @@ submit.click()
 
 
 wait = WebDriverWait(driver, 10)
-wait.until(EC.presence_of_element_located(demo_locators.ajax_3)
+wait.until(EC.presence_of_element_located(demo_locators.ajax_3))
 
 submit = driver.find_element(demo_locators.ajax_3)
 assert(submit.is_displayed())
@@ -75,18 +75,18 @@ submit.click()
 time.sleep(2)
 
 wait = WebDriverWait(driver, 10)
-wait.until(EC.presence_of_element_located((By.ID, "edit-submit-complete-later")))
+wait.until(EC.presence_of_element_located(demo_locators.button))
 
 driver.execute_script("window.scrollBy(0, 2500);")
 time.sleep(1)
 
-button = driver.find_element(By.ID, "edit-submit-complete-later")
+button = driver.find_element(demo_locators.button)
 button.click()
 
 wait = WebDriverWait(driver, 10)
 time.sleep(2)
 
-success = driver.find_element(By.CLASS_NAME, "success-image")
+success = driver.find_element(demo_locators.success)
 assert(success.is_displayed())
 
 
