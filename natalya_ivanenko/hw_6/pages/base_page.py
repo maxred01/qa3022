@@ -48,6 +48,9 @@ class BasePage:
         )
         return self.driver.find_element(by_name, by_val)
 
+    def is_element_enabled(self, el):
+        return el.is_enabled()
+
     def is_not_element_present(self, *args):
         """ Метод is_not_element_present() проверяет, что элемент не появляется
             на странице в течение 10 секунд. Метод принимает два аргумента:
