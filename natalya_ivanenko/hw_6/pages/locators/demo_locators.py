@@ -10,7 +10,6 @@ label = (By.CLASS_NAME, "tds-form-input-choice-label")
 text = (By.CLASS_NAME, "tds-form-feedback-text")
 ajax0 = (By.ID, "edit-submit-td-ajax0")
 ajax_3 = (By.ID, "edit-submit-td-ajax-3")
-complete_later = (By.ID, "edit-submit-complete-later")
 button = (By.ID, "edit-submit-complete-later")
 success = (By.CLASS_NAME, "success-image")
 
