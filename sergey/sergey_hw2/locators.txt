@@ -1,0 +1,23 @@
+Xpath:
+1. https://demoqa.com/
+//*[@id="app"]
+2. https://demoqa.com/text-box
+//*[@id="userName"]
+3. https://demoqa.com/text-box
+//*[@id="submit"]
+4. https://demoqa.com/checkbox
+//*[@id="tree-node"]//*[contains(text(),'Home')]
+5.https://demoqa.com/checkbox
+//*[@id="tree-node"]//button[@title="Expand all"]
+
+CSS:
+1. https://demoqa.com/radio-button
+#impressiveRadio
+2. https://demoqa.com/webtables
+#delete-record-1
+3. https://demoqa.com/webtables
+#basic-addon2
+4. https://demoqa.com/buttons
+#zIate
+5. https://demoqa.com/links
+#invalid-url

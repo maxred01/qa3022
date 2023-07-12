@@ -1,0 +1,31 @@
+# demoqa.com main page
+
+XPath locators:
+
+//*[text()='Elements']
+
+//*[text()='Forms']
+
+//*[text()='Widgets']
+
+//*[text()='Interactions']
+
+//*[text()='Book Store Application']
+
+(//*[text()='Alerts, Frame & Windows'])[2]
+
+CSS locators:
+
+img[src="/images/Toolsqa.jpg"]
+
+div[class="main-header"]
+
+img[alt='Selenium Online Training']
+
+div.home-banner
+
+a[href="https://www.toolsqa.com/selenium-training/"]
+
+
+
+
